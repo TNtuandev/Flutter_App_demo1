@@ -1,0 +1,91 @@
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../theme/css/style-min.css?v=3"> 
+  <style>img{display: inline; height: auto; max-width: 100%;}</style>
+ </head>
+ <body>
+  <div class="content"> 
+   <div class="col-md-7 middle-col"> 
+    <h1>W3.CSS - Code Coloring</h1> 
+    <div class="clearer"></div> 
+    <p>W3.CSS provides excellent support for syntax highlighting of the following languages −</p> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p><b>HTML</b> − Use classes w3-code htmlHigh on the container having HTML Code.</p></li> 
+     <li><p><b>CSS</b> − Use classes w3-code cssHigh on the container having CSS Code.</p></li> 
+     <li><p><b>JS</b> − Use classes w3-code jsHigh on the container having CSS Code.</p></li> 
+    </ul> 
+    <p>You have to include the following script to have a link to the js file to have the syntax highlighting support −</p> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;script src = "https://www.w3schools.com/lib/w3codecolors.js"&gt;&lt;/script&gt;
+</pre> 
+    <h3>w3css_color_coding.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Syntax Highlighter&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;header class = "w3-container w3-teal"&gt;
+         &lt;h2&gt;HTML Syntax Highlighted&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class = "w3-code htmlHigh"&gt;
+         &lt;html&gt;
+            &lt;head&gt;
+               &lt;title&gt;The W3.CSS Example&lt;/title&gt;
+               &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+               &lt;link rel="stylesheet" href="css/w3.css"&gt;
+            &lt;/head&gt;
+            
+            &lt;body&gt;
+               &lt;header class="w3-container w3-teal"&gt;
+                  &lt;h1&gt;Hello World!&lt;/h1&gt;
+               &lt;/header&gt;
+            &lt;/body&gt;
+         &lt;/html&gt;
+      &lt;/div&gt;
+      
+      &lt;header class="w3-container w3-teal"&gt;
+         &lt;h2&gt;CSS Syntax Highlighted&lt;/h2&gt;
+      &lt;/header&gt;
+      
+      &lt;div class = "w3-code cssHigh"&gt;
+         .bold {
+            font-weight:bold;
+         }
+         #boldLabel {
+            font-weight:bold;
+         }
+         table, th, td {
+            font-family:sans;
+         }
+      &lt;/div&gt;
+      
+      &lt;header class = "w3-container w3-teal"&gt;
+         &lt;h2&gt;JS Syntax Highlighted&lt;/h2&gt;
+      &lt;/header&gt;
+      
+      &lt;div class = "w3-code cssHigh"&gt;
+         &lt;script type="text/javascript"&gt;
+            function(message){
+            }
+            var message = "Hello, World!";
+            alert(message);
+         &lt;/script&gt;
+      &lt;/div&gt;
+      &lt;script src="https://www.w3schools.com/lib/w3codecolors.js"&gt;&lt;/script&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <!-- PRINTING ENDS HERE --> 
+   </div> 
+  </div>
+ </body>
+</html>

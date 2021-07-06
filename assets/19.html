@@ -1,0 +1,1627 @@
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../theme/css/style-min.css?v=3"> 
+  <style>img{display: inline; height: auto; max-width: 100%;}</style>
+ </head>
+ <body>
+  <div class="content"> 
+   <div class="col-md-7 middle-col"> 
+    <h1>W3.CSS - Quick Guide</h1> 
+    <div class="clearer"></div> 
+    <h1>W3.CSS - Overview</h1> 
+    <h2>What is W3.CSS?</h2> 
+    <p>W3.CSS is a Cascading Style Sheet (CSS) developed by <a rel="nofollow" target="_blank">w3schools.com</a>. It helps in creating faster, beautiful, and responsive websites. It is inspired from Google Material Design.</p> 
+    <p>Some of its salient features are as follows −</p> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p>In-built responsive designing</p></li> 
+     <li><p>Standard CSS</p></li> 
+     <li><p>Inspired by Google Material Design</p></li> 
+     <li><p>Free to use</p></li> 
+    </ul> 
+    <h2>Responsive Design</h2> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p>W3.CSS has in-built responsive designing so that the website created using W3.CSS will redesign itself as per the device size.</p></li> 
+     <li><p>W3.CSS has a 12 column mobile-first fluid grid that supports responsive classes for small, large, and medium screen sizes.</p></li> 
+     <li><p>W3.CSS classes are created in such a way that the website can fit any screen size.</p></li> 
+     <li><p>The websites created using W3.CSS are fully compatible with PC, tablets, and mobile devices.</p></li> 
+    </ul> 
+    <h2>Standard CSS</h2> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p>W3.CSS uses standard CSS only and it is very easy to learn.</p></li> 
+     <li><p>There is no dependency on any external JavaScript library such as jQuery.</p></li> 
+    </ul> 
+    <h2>Material Design</h2> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p>W3.CSS is inspired from Google Material Design.</p></li> 
+     <li><p>It supports paper-like design.</p></li> 
+     <li><p>It supports shadows and bold colors.</p></li> 
+     <li><p>The colors and shades remain uniform across various platforms and devices.</p></li> 
+    </ul> 
+    <p>And most important of all, it is absolutely free to use.</p> 
+    <h1>W3.CSS - Environment Setup</h1> 
+    <h2>How to Use W3.CSS?</h2> 
+    <p>There are two ways to use W3.CSS −</p> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p><b>Local Installation</b> − You can download the W3.CSS file on your local machine and include it in your HTML code.</p></li> 
+     <li><p><b>CDN Based Version</b> − You can include the W3.CSS file into your HTML code directly from the Content Delivery Network (CDN).</p></li> 
+    </ul> 
+    <h2>Local Installation</h2> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p>Go to <a rel="nofollow" target="_blank">https://www.w3schools.com/w3css/w3css_downloads.asp</a> to download the latest version available.</p></li> 
+     <li><p>Then, put the downloaded w3.css file in a directory of your website, e.g. /css.</p></li> 
+    </ul> 
+    <h3>Example</h3> 
+    <p>Now you can include the <i>css</i> file in your HTML file as follows −</p> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Example&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "css/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;header class = "w3-container w3-teal"&gt;
+         &lt;h1&gt;Hello World!&lt;/h1&gt;
+      &lt;/header&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <p>It will produce the following result −</p> 
+    <h2>CDN Based Version</h2> 
+    <p>You can include the W3.CSS file into your HTML code directly from the Content Delivery Network (CDN). W3Schools.com provides content for the latest version.</p> 
+    <p><b>Note</b> − We are using W3Schools.com CDN version of the library throughout this tutorial.</p> 
+    <h3>Example</h3> 
+    <p>Now let us rewrite the above example using jQuery library from W3Schools.com CDN.</p> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Example&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width =  device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;header class = "w3-container w3-teal"&gt;
+         &lt;h1&gt;Hello World!&lt;/h1&gt;
+      &lt;/header&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <p>It will produce the following result −</p> 
+    <h1>W3.CSS - Containers</h1> 
+    <p>HTML5 has the following container elements −</p> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p><b>&lt;div&gt;</b> − Provides a generic container to HTML content.</p></li> 
+     <li><p><b>&lt;header&gt;</b> − Represents the header section.</p></li> 
+     <li><p><b>&lt;footer&gt;</b> − Represents the footer section.</p></li> 
+     <li><p><b>&lt;article&gt;</b> − Represents articles.</p></li> 
+     <li><p><b>&lt;section&gt;</b> − Provides a generic container for various types of sections.</p></li> 
+    </ul> 
+    <p>W3.CSS provides <b>w3-container</b> as a primary class to style all the above-mentioned containers. W3.CSS also has other classes like <b>w3-border</b>, <b>w3-red</b>, <b>w3-teal</b>, <b>w3-padding-32</b> to add further styling attributes to the containers.</p> 
+    <h2>Example</h2> 
+    <p>The following example showcases the use of w3-container class to style various containers.</p> 
+    <h3>w3css_containers.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Containers&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;header class = "w3-container w3-red"&gt;
+         &lt;h1&gt;HTML5 Tutorial&lt;/h1&gt;
+      &lt;/header&gt;
+      
+      &lt;div class = "w3-container w3-border w3-teal"&gt;
+         &lt;p&gt;HTML5 is the latest and most enhanced version of HTML. Technically, HTML is not a programming language, but rather a mark up language.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;article class = "w3-container"&gt;
+         &lt;p&gt;The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5 functionality. The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all have excellent support for HTML5.&lt;/p&gt;
+      &lt;/article&gt;
+      
+      &lt;section class = "w3-container"&gt;
+         &lt;p&gt;HTML5 is designed, as much as possible, to be backward compatible with existing web browsers. New features build on existing features and allow you to provide fallback content for older browsers.&lt;/p&gt;
+      &lt;/section&gt;
+      
+      &lt;footer class = "w3-container w3-red"&gt;
+         &lt;p&gt;Copyright @TutorialsPoint.COM&lt;/p&gt;
+      &lt;/footer&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h3>Result</h3> 
+    <p>Verify the result.</p> 
+    <p>W3.CSS also provides containers with hide/close capability. See the following example −</p> 
+    <h3>w3css_hide_container.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Containers&lt;/title&gt;
+      &lt;meta name = "viewport" content="width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;div class = "w3-container w3-border w3-teal"&gt;
+         &lt;span class = "w3-closebtn" onclick = "this.parentElement.style.display = 'none'"&gt;X&lt;/span&gt;
+         &lt;p&gt;Close container by clicking on the X in the upper right corner.&lt;/p&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h3>Result</h3> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Code Coloring</h1> 
+    <p>W3.CSS provides excellent support for syntax highlighting of the following languages −</p> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p><b>HTML</b> − Use classes w3-code htmlHigh on the container having HTML Code.</p></li> 
+     <li><p><b>CSS</b> − Use classes w3-code cssHigh on the container having CSS Code.</p></li> 
+     <li><p><b>JS</b> − Use classes w3-code jsHigh on the container having CSS Code.</p></li> 
+    </ul> 
+    <p>You have to include the following script to have a link to the js file to have the syntax highlighting support −</p> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;script src = "https://www.w3schools.com/lib/w3codecolors.js"&gt;&lt;/script&gt;
+</pre> 
+    <h3>w3css_color_coding.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Syntax Highlighter&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;header class = "w3-container w3-teal"&gt;
+         &lt;h2&gt;HTML Syntax Highlighted&lt;/h2&gt;
+      &lt;/header&gt;
+      &lt;div class = "w3-code htmlHigh"&gt;
+         &lt;html&gt;
+            &lt;head&gt;
+               &lt;title&gt;The W3.CSS Example&lt;/title&gt;
+               &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+               &lt;link rel="stylesheet" href="css/w3.css"&gt;
+            &lt;/head&gt;
+            
+            &lt;body&gt;
+               &lt;header class="w3-container w3-teal"&gt;
+                  &lt;h1&gt;Hello World!&lt;/h1&gt;
+               &lt;/header&gt;
+            &lt;/body&gt;
+         &lt;/html&gt;
+      &lt;/div&gt;
+      
+      &lt;header class="w3-container w3-teal"&gt;
+         &lt;h2&gt;CSS Syntax Highlighted&lt;/h2&gt;
+      &lt;/header&gt;
+      
+      &lt;div class = "w3-code cssHigh"&gt;
+         .bold {
+            font-weight:bold;
+         }
+         #boldLabel {
+            font-weight:bold;
+         }
+         table, th, td {
+            font-family:sans;
+         }
+      &lt;/div&gt;
+      
+      &lt;header class = "w3-container w3-teal"&gt;
+         &lt;h2&gt;JS Syntax Highlighted&lt;/h2&gt;
+      &lt;/header&gt;
+      
+      &lt;div class = "w3-code cssHigh"&gt;
+         &lt;script type="text/javascript"&gt;
+            function(message){
+            }
+            var message = "Hello, World!";
+            alert(message);
+         &lt;/script&gt;
+      &lt;/div&gt;
+      &lt;script src="https://www.w3schools.com/lib/w3codecolors.js"&gt;&lt;/script&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Cards</h1> 
+    <p>W3.CSS has several special classes to display containers as paper-like cards with shadow.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-card</b></p> <p>Styles a container for any HTML content with border</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-card-2</b></p> <p>Styles a container for any HTML content with 2px bordered shadow</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-card-4</b></p> <p>Styles a container for any HTML content with 4px bordered shadow</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>w3-card-8</b></p> <p>Styles a container for any HTML content with 8px bordered shadow</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>w3-card-12</b></p> <p>Styles a container for any HTML content with 12px bordered shadow</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_cards.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Syntax Highlighter&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+      &lt;style&gt;
+         div {
+            width : 200px;	
+            height : 200px;	
+         } 
+      &lt;/style&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;   
+      &lt;header class = "w3-container w3-teal"&gt;   
+         &lt;h2&gt;Yellow Card Demo&lt;/h2&gt;   
+      &lt;/header&gt;
+      &lt;br/&gt;
+      
+      &lt;div class = "w3-card w3-yellow"&gt;
+         &lt;p&gt;&lt;b&gt;TODO:&lt;/b&gt; Learn HTML5&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class = "w3-card-2 w3-yellow"&gt;
+         &lt;p&gt;&lt;b&gt;TODO:&lt;/b&gt; Learn HTML5&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class = "w3-card-4 w3-yellow"&gt;
+         &lt;p&gt;&lt;b&gt;TODO:&lt;/b&gt; Learn HTML5&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class = "w3-card-8 w3-yellow"&gt;
+         &lt;p&gt;&lt;b&gt;TODO:&lt;/b&gt; Learn HTML5&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+      
+      &lt;header class = "w3-container w3-teal"&gt;   
+         &lt;h2&gt;White Card Demo&lt;/h2&gt;   
+      &lt;/header&gt;
+      &lt;br/&gt;
+      
+      &lt;div class = "w3-card w3-white"&gt;
+         &lt;p&gt;&lt;b&gt;TODO:&lt;/b&gt; Learn W3.CSS&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class = "w3-card-8 w3-white"&gt;
+         &lt;p&gt;&lt;b&gt;TODO:&lt;/b&gt; Learn HTML5&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+      
+      &lt;div class = "w3-card-4" style = "width:550px;"&gt;
+         &lt;header class = "w3-container w3-blue"&gt;
+            &lt;h1&gt;HTML5 Tutorial&lt;/h1&gt;
+         &lt;/header&gt;
+         
+         &lt;div class = "w3-container" style = "width:550px;"&gt;
+            &lt;p&gt;The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5 functionality. The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all have excellent support for HTML5.&lt;/p&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+      
+      &lt;header class  =  "w3-container w3-teal"&gt;   
+         &lt;h2&gt;Image Card Demo&lt;/h2&gt;   
+      &lt;/header&gt;
+      &lt;br/&gt;
+      
+      &lt;div class = "w3-card-12" style = "width:255px; height: 230px;"&gt;
+         &lt;img src = "/html5/images/html5-mini-logo.jpg" alt = "html5"&gt;
+         &lt;div class = "w3-container"&gt;
+            &lt;p&gt;Learn HTML5&lt;/p&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Responsive Design</h1> 
+    <p>W3.CSS has several special classes to create a responsive design.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-half</b></p> <p>Sets the container to occupy 1/2<sup>nd</sup> of the window on medium or large screen devices. If a screen is smaller than 601 pixels, then it resizes the container to 100%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-third</b></p> <p>Sets the container to occupy 1/3<sup>rd</sup> of the window on medium or large screen devices. If a screen is smaller than 601 pixels, then it resizes the container to 100%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-quarter</b></p> <p>Sets the container to occupy 1/4<sup>th</sup> of the window on medium or large screen devices. If a screen is smaller than 601 pixels, then it resizes the container to 100%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>w3-col</b></p> <p>Specifies a column in a 12 column grid.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>w3-row</b></p> <p>Specifies a padding-less container to be used for responsive classes. This class is mandatory for responsive classes to be fully responsive.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_responsive_design.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Containers&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;header class = "w3-container w3-teal"&gt;
+         &lt;h2&gt;Mobile First Design Demo&lt;/h2&gt;
+         &lt;p class = "w3-large"&gt;Resize the window to see the effect!&lt;/p&gt;
+      &lt;/header&gt;
+      &lt;br/&gt;
+      
+      &lt;div class = "w3-row w3-border"&gt;
+         &lt;div class = "w3-container w3-half w3-red"&gt;
+            &lt;h2&gt;w3-half&lt;/h2&gt;
+            &lt;p&gt;Sets the container to occupy 1/2&lt;sup&gt;nd&lt;/sup&gt; of the window on medium or large screen devices. If a screen is smaller than 601 pixels then it resizes the container to 100%.&lt;/p&gt;
+         &lt;/div&gt;
+         
+         &lt;div class = "w3-container w3-half"&gt;
+            &lt;h2&gt;w3-half&lt;/h2&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+      
+      &lt;div class = "w3-row w3-border"&gt;
+         &lt;div class = "w3-container w3-third w3-red"&gt;
+            &lt;h2&gt;w3-third&lt;/h2&gt;
+            &lt;p&gt;Sets the container to occupy 1/3&lt;sup&gt;rd&lt;/sup&gt; of the window on medium or large screen devices. If a screen is smaller than 601 pixels then it resizes the container to 100%.&lt;/p&gt;
+         &lt;/div&gt;
+         
+         &lt;div class = "w3-container w3-third"&gt;
+            &lt;h2&gt;w3-third&lt;/h2&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br/&gt;
+      
+      &lt;div class = "w3-row w3-border"&gt;
+         &lt;div class = "w3-container w3-quarter w3-red"&gt;
+            &lt;h2&gt;w3-quarter&lt;/h2&gt;
+            &lt;p&gt;Sets the container to occupy 1/4&lt;sup&gt;th&lt;/sup&gt; of the window on medium or large screen devices. If a screen is smaller than 601 pixels then it resizes the container to 100%.&lt;/p&gt;
+         &lt;/div&gt;
+
+         &lt;div class = "w3-container w3-quarter"&gt;
+            &lt;h2&gt;w3-quarter&lt;/h2&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Grids</h1> 
+    <p>W3.CSS provides a 12 column fluid responsive grid.</p> 
+    <p>It uses the w3-row and w3-col style classes to define rows and columns respectively.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-row</b></p> <p>Specifies a padding-less container to be used for responsive columns. This class is mandatory for responsive classes to be fully responsive.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-col</b></p><p>Specifies a column with sub-classes</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <p>w3-col has several sub-classes meant for different types of screens.</p> 
+    <h2>Columns for Small Screen Devices</h2> 
+    <p>Here is a list of column-level styles for small screen devices, typically smartphones.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>s1</b></p> <p>Defines 1 of 12 columns with width as 08.33%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>s2</b></p> <p>Defines 2 of 12 columns with width as 16.66%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>s3</b></p> <p>Defines 3 of 12 columns with width as 25.00%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>s4</b></p> <p>Defines 4 of 12 columns with width as 33.33%.</p></td> 
+      </tr> 
+      <!--<tr>
+<td style="text-align:center;">5</td>
+<td><b>s5 - s11</b> <br/>
+&minus;</td>
+</tr>--> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>s12</b></p> <p>Defines 12 of 12 columns with width as 100%. Default class for small screen phones.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Columns for Medium Screen Devices</h2> 
+    <p>Here is a list of column-level styles for medium screen devices, typically tablets.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>m1</b></p><p>Defines 1 of 12 columns with width as 08.33%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>m2</b></p> <p>Defines 2 of 12 columns with width as 16.66%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>m3</b></p><p>Defines 3 of 12 columns with width as 25.00%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>m4</b></p><p>Defines 4 of 12 columns with width as 33.33%.</p></td> 
+      </tr> 
+      <!--<tr>
+<td style="text-align:center;">5</td>
+<td><b>m5 - m11</b><br/>
+&minus;</td>
+</tr>--> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>m12</b></p> <p>Defines 12 of 12 columns with width as 100%. Default class for medium screen phones.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Columns for Large Screen Devices</h2> 
+    <p>Here is a list of column-level styles for large screen devices, typically laptops.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>|1</b></p> <p>Defines 1 of 12 columns with width as 08.33%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>|2</b></p> <p>Defines 2 of 12 columns with width as 16.66%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>|3</b></p> <p>Defines 3 of 12 columns with width as 25.00%.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>|4</b></p><p>Defines 4 of 12 columns with width as 33.33%.</p></td> 
+      </tr> 
+      <!--<tr>
+<td>5</td>
+<td><b>|5 - |11</b><br/>&minus;</td>
+</tr>--> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>|12</b></p> <p>Defines 12 of 12 columns with width as 100%. Default class for large screen devices.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Usage</h2> 
+    <p>Each subclass determines the number of columns of the grid to be used based on the type of a device. Consider the following HTML snippet.</p> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;div class = "w3-row"&gt;
+   &lt;div class = "w3-col s2 m4 l3"&gt;
+      &lt;p&gt;This text will use 2 columns on a small screen, 4 on a medium screen, and 3 on a large screen.&lt;/p&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+</pre> 
+    <p>Default columns to be used are 12 on a device if a sub-class is not mentioned in the class attribute of an HTML element.</p> 
+    <h2>Example</h2> 
+    <h3>w3css_grids.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Grids&lt;/title&gt;
+      &lt;meta name = "viewport" content="width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+
+   &lt;body&gt;
+      &lt;header class = "w3-container w3-teal"&gt;
+         &lt;h2&gt;Mobile First Design Demo&lt;/h2&gt;
+         &lt;p class = "w3-large"&gt;Resize the window to see the effect!&lt;/p&gt;
+      &lt;/header&gt;
+      &lt;div class = "w3-row"&gt;
+         &lt;div class = "w3-col m1 w3-center w3-grey"&gt;1&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center"&gt;2&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center w3-grey"&gt;3&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center"&gt;4&lt;/div&gt;
+      
+         &lt;div class = "w3-col m1 w3-center w3-grey"&gt;5&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center"&gt;6&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center w3-grey"&gt;7&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center"&gt;8&lt;/div&gt;
+      
+         &lt;div class = "w3-col m1 w3-center w3-grey"&gt;9&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center"&gt;10&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center w3-grey"&gt;11&lt;/div&gt;
+         &lt;div class = "w3-col m1 w3-center"&gt;12&lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div class = "w3-row"&gt;
+         &lt;div class = "w3-col w3-container m4 l3 w3-yellow"&gt;
+            &lt;p&gt;This text will use 12 columns on a small screen, 4 on a medium screen (m4), and 3 on a large screen (l3).&lt;/p&gt;
+         &lt;/div&gt;
+      
+         &lt;div class = "w3-col w3-container s4 m8 l9"&gt;
+            &lt;p&gt;This text will use 4 columns on a small screen (s4), 8 on a medium screen (m8), and 9 on a large screen (l9).&lt;/p&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Forms</h1> 
+    <p>W3.CSS has a very beautiful and responsive CSS for form designing. The following CSS are used −</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-group</b></p> <p>Represents a bordered container. Can be used to group a label and input.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-input</b></p> <p>Beautifies an input control.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-label</b></p> <p>Beautifies a label.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>w3-checkbox w3-checkmark</b></p> <p>Beautify a checkbox/ radio button.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_forms.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Forms&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body&gt;
+      &lt;form class = "w3-container w3-card-8"&gt;
+         &lt;div class = "w3-group"&gt;
+            &lt;input class = "w3-input" type = "text" style = "width:90%" required&gt;
+            &lt;label class = "w3-label"&gt;User Name&lt;/label&gt;
+         &lt;/div&gt;
+         
+         &lt;div class = "w3-group"&gt;
+            &lt;input class = "w3-input" type = "text" style = "width:90%" required&gt;
+            &lt;label class = "w3-label"&gt;Email&lt;/label&gt;
+         &lt;/div&gt;
+         
+         &lt;div class = "w3-group"&gt;
+            &lt;textarea class = "w3-input" style = "width:90%" required&gt;&lt;/textarea&gt;
+            &lt;label class = "w3-label"&gt;Comments&lt;/label&gt;
+         &lt;/div&gt;
+         &lt;div class = "w3-row"&gt;
+            &lt;div class = "w3-half"&gt;
+               &lt;label class = "w3-checkbox"&gt;
+                  &lt;input type = "checkbox" checked = "checked"&gt;
+                  &lt;div class = "w3-checkmark"&gt;&lt;/div&gt; Married
+               &lt;/label&gt;
+               &lt;br&gt;
+               &lt;label class = "w3-checkbox"&gt;
+                  &lt;input type = "checkbox"&gt;
+                  &lt;div class = "w3-checkmark"&gt;&lt;/div&gt; Single
+               &lt;/label&gt;
+               &lt;br&gt;
+               &lt;label class = "w3-checkbox"&gt;
+                  &lt;input type = "checkbox" disabled&gt;
+                  &lt;div class = "w3-checkmark"&gt;&lt;/div&gt; Don't know (Disabled)
+               &lt;/label&gt;
+               &lt;br&gt;
+               &lt;br&gt;
+            &lt;/div&gt;
+            
+            &lt;div class = "w3-half"&gt;
+               &lt;label class = "w3-checkbox"&gt;
+                  &lt;input type = "radio" name = "gender" value = "male" checked&gt;
+                  &lt;div class = "w3-checkmark"&gt;&lt;/div&gt; Male
+               &lt;/label&gt;
+               &lt;br&gt;
+               &lt;label class = "w3-checkbox"&gt;
+                  &lt;input type = "radio" name = "gender" value = "female"&gt;
+                  &lt;div class = "w3-checkmark"&gt;&lt;/div&gt; Female
+               &lt;/label&gt;
+               &lt;br&gt;
+               &lt;label class = "w3-checkbox"&gt;
+                  &lt;input type = "radio" name = "gender" value = "female" disabled&gt;
+                  &lt;div class = "w3-checkmark"&gt;&lt;/div&gt; Don't know (Disabled)
+               &lt;/label&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Buttons</h1> 
+    <p>W3.CSS has a very beautiful and responsive CSS for customizing the look of a button. The following CSS are used −</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-btn</b></p> <p>Represents a standard button. Can be used to style a link as button as well.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-btn-floating</b></p> <p>Represents a floating button being circular in design.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-btn-floating-large</b></p> <p>Represents a large floating button.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_buttons.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Forms&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Standard Buttons&lt;/h2&gt;
+      &lt;button class = "w3-btn"&gt;Click Me&lt;/button&gt;
+      &lt;button class = "w3-btn w3-teal"&gt;Click Me&lt;/button&gt;
+      &lt;button class = "w3-btn w3-disabled"&gt;I am disabled&lt;/button&gt;
+      
+      &lt;h2&gt;Links as Buttons&lt;/h2&gt;
+      &lt;a class = "w3-btn"&gt;Link&lt;/a&gt;
+      &lt;a class = "w3-btn w3-teal"&gt;Link&lt;/a&gt;
+      &lt;a class = "w3-btn w3-disabled"&gt;Disabled Link&lt;/a&gt;
+      
+      &lt;h2&gt;Floating Buttons&lt;/h2&gt;
+      &lt;a class = "w3-btn-floating"&gt;+&lt;/a&gt;
+      &lt;a class = "w3-btn-floating w3-teal"&gt;+&lt;/a&gt;
+      &lt;a class = "w3-btn-floating w3-disabled"&gt;+&lt;/a&gt;
+      
+      &lt;h2&gt;Large Floating Buttons&lt;/h2&gt;
+      &lt;a class = "w3-btn-floating-large"&gt;+&lt;/a&gt;
+      &lt;a class = "w3-btn-floating-large w3-teal"&gt;+&lt;/a&gt;
+      &lt;a class = "w3-btn-floating-large w3-disabled"&gt;+&lt;/a&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Tooltips</h1> 
+    <p>W3.CSS supports a different kind of tooltip using w3-tooltip class. Take a look at the following example. Here we've put a tooltiptext within a div and an image and applied w3- tooltip on the parent div.</p> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;div class = "w3-tooltip"&gt;
+   &lt;div class = "w3-text w3-container w3-teal" style = "width:255px;"&gt;
+      &lt;p&gt;Learn HTML5 in simply easy way @TutorialsPoint.com&lt;/p&gt;
+   &lt;/div&gt;
+   &lt;div&gt;
+      &lt;img src = "html5-mini-logo.jpg" alt = "html5"&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+</pre> 
+    <h2>Example</h2> 
+    <h3>w3css_tooltips.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Tooltips&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Hover Demo&lt;/h2&gt;
+      &lt;div class = "w3-tooltip"&gt;
+         &lt;div class = "w3-text w3-container w3-teal" style = "width:255px;"&gt;
+            &lt;p&gt;Learn HTML5 in simply easy way @TutorialsPoint.com&lt;/p&gt;
+         &lt;/div&gt;
+         
+         &lt;div&gt;
+            &lt;img src = "html5-mini-logo.jpg" alt = "html5"&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Modal Dialog</h1> 
+    <p>W3.CSS can be used to display a customizable modal dialog box instead of the standard JavaScript alert.</p> 
+    <p>It uses w3-row and w3-col style classes to define rows and columns respectively.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>modal-dialog</b></p> <p>Represents the main parent window to define a dialog box.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-modal-dialog</b></p> <p>Represents the dialog content container.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-modal-content</b></p> <p>Represents dialog contents.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_modal_dialog.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Modal dialog&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Modal dialog Demo&lt;/h2&gt;
+      &lt;a class = "w3-btn w3-teal" href = "#model-dialog"&gt;Open a Modal dialog&lt;/a&gt;
+      &lt;div id = "model-dialog" class = "w3-modal"&gt;
+         &lt;div class = "w3-modal-dialog"&gt;
+            &lt;div class = "w3-modal-content w3-card-8"&gt;
+               &lt;header class = "w3-container w3-teal"&gt;
+                  &lt;a href = "#" class = "w3-closebtn"&gt;×&lt;/a&gt;
+                  &lt;h2&gt;TutorialsPoint&lt;/h2&gt;
+               &lt;/header&gt;
+               &lt;div class = "w3-container"&gt;
+                  &lt;p&gt;Hello World!&lt;/p&gt;
+               &lt;/div&gt;
+               &lt;footer class = "w3-container w3-teal"&gt;
+                  &lt;p&gt;@TutorialsPoint.COM&lt;/p&gt;
+               &lt;/footer&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Tables</h1> 
+    <p>W3.CSS can be used to display different types of tables using various styles over w3-table.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-table</b></p> <p>Represents a basic table without any border.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-striped</b></p> <p>Displays a stripped table.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-bordered</b></p> <p>Draws a table with a border across rows.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>w3-border</b></p> <p>Draws a table with borders.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>w3-card</b></p> <p>Draws a table as a card.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">6</td> 
+       <td><p><b>w3-responsive</b><br> </p><p>Draws a responsive table to show a horizontal scrollbar, if the screen is too small to display the content.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">7</td> 
+       <td><b>w3-tiny</b><p></p> Draws a table with very small font.<p></p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">8</td> 
+       <td><p><b>w3-small</b></p> <p>Draws a table with small font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">9</td> 
+       <td><p><b>w3-large</b></p> <p>Draws a table with large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">10</td> 
+       <td><p><b>w3-xlarge</b></p> <p>Draws a table with extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">11</td> 
+       <td><p><b>w3-xxlarge</b></p> <p>Draws a table with very extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">12</td> 
+       <td><p><b>w3-xxxlarge</b></p> <p>Draws a table with very high extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">13</td> 
+       <td><p><b>w3-jumbo</b></p> <p>Draws a table with jumbo large font.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_tables.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Tables&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width=device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Tables Demo&lt;/h2&gt;
+      &lt;hr/&gt;
+      &lt;h3&gt;Simple Table&lt;/h3&gt;
+      &lt;table class = "w3-table"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th&gt;Student&lt;/th&gt;
+               &lt;th&gt;Class&lt;/th&gt;
+               &lt;th&gt;Grade&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Rahul Sharma&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;B&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mohan Sood&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+      
+      &lt;h3&gt;Stripped Table with borders&lt;/h3&gt;
+      &lt;table class = "w3-table w3-striped w3-bordered w3-border"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th&gt;Student&lt;/th&gt;
+               &lt;th&gt;Class&lt;/th&gt;
+               &lt;th&gt;Grade&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Rahul Sharma&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;B&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mohan Sood&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;hr/&gt;
+      
+      &lt;h3&gt;Table as Card&lt;/h3&gt;
+      &lt;table class = "w3-table w3-card-4"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+            &lt;th&gt;Student&lt;/th&gt;
+            &lt;th&gt;Class&lt;/th&gt;
+            &lt;th&gt;Grade&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Rahul Sharma&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;B&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mohan Sood&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+      
+      &lt;h3&gt;Responsive table&lt;/h3&gt;
+      &lt;div class = "w3-responsive"&gt;
+         &lt;table class = "w3-table w3-card-4"&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th&gt;Student&lt;/th&gt;
+                  &lt;th&gt;Class&lt;/th&gt;
+                  &lt;th&gt;Data #1&lt;/th&gt;
+                  &lt;th&gt;Data #2&lt;/th&gt;
+                  &lt;th&gt;Data #3&lt;/th&gt;
+                  &lt;th&gt;Data #4&lt;/th&gt;
+                  &lt;th&gt;Data #5&lt;/th&gt;
+                  &lt;th&gt;Data #6&lt;/th&gt;
+                  &lt;th&gt;Data #7&lt;/th&gt;
+                  &lt;th&gt;Data #8&lt;/th&gt;
+                  &lt;th&gt;Data #9&lt;/th&gt;
+                  &lt;th&gt;Data #10&lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            
+            &lt;tbody&gt;
+               &lt;tr&gt;
+                  &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+                  &lt;td&gt;VI&lt;/td&gt;
+                  &lt;td&gt;10&lt;/td&gt;
+                  &lt;td&gt;11&lt;/td&gt;
+                  &lt;td&gt;12&lt;/td&gt;
+                  &lt;td&gt;13&lt;/td&gt;
+                  &lt;td&gt;14&lt;/td&gt;
+                  &lt;td&gt;15&lt;/td&gt;
+                  &lt;td&gt;16&lt;/td&gt;
+                  &lt;td&gt;17&lt;/td&gt;
+                  &lt;td&gt;19&lt;/td&gt;
+                  &lt;td&gt;20&lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td&gt;Rahul Sharma&lt;/td&gt;
+                  &lt;td&gt;VI&lt;/td&gt;
+                  &lt;td&gt;10&lt;/td&gt;
+                  &lt;td&gt;11&lt;/td&gt;
+                  &lt;td&gt;12&lt;/td&gt;
+                  &lt;td&gt;13&lt;/td&gt;
+                  &lt;td&gt;14&lt;/td&gt;
+                  &lt;td&gt;15&lt;/td&gt;
+                  &lt;td&gt;16&lt;/td&gt;
+                  &lt;td&gt;17&lt;/td&gt;
+                  &lt;td&gt;19&lt;/td&gt;
+                  &lt;td&gt;20&lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td&gt;Mohan Sood&lt;/td&gt;
+                  &lt;td&gt;VI&lt;/td&gt;
+                  &lt;td&gt;10&lt;/td&gt;
+                  &lt;td&gt;11&lt;/td&gt;
+                  &lt;td&gt;12&lt;/td&gt;
+                  &lt;td&gt;13&lt;/td&gt;
+                  &lt;td&gt;14&lt;/td&gt;
+                  &lt;td&gt;15&lt;/td&gt;
+                  &lt;td&gt;16&lt;/td&gt;
+                  &lt;td&gt;17&lt;/td&gt;
+                  &lt;td&gt;19&lt;/td&gt;
+                  &lt;td&gt;20&lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+      
+      &lt;h3&gt;Table with very small font&lt;/h3&gt;
+      &lt;table class = "w3-table w3-tiny"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th&gt;Student&lt;/th&gt;
+               &lt;th&gt;Class&lt;/th&gt;
+               &lt;th&gt;Grade&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Rahul Sharma&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;B&lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mohan Sood&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Lists</h1> 
+    <p>W3.CSS can be used to display different types of lists using various styles over w3-ul.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-ul</b></p> <p>Represents a basic list without any border.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-striped</b></p> <p>Displays a stripped list.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-bordered</b></p> <p>Draws a list with border across rows.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>w3-border</b></p> <p>Draws a list with border.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>w3-card</b></p> <p>Draws a list as a card.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">6</td> 
+       <td><p><b>w3-tiny</b></p> <p>Draws a list with very small font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">7</td> 
+       <td><p><b>w3-small</b></p> <p>Draws a list with small font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">8</td> 
+       <td><p><b>w3-large</b></p> <p>Draws a list with large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">9</td> 
+       <td><p><b>w3-xlarge</b></p> <p>Draws a list with extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">10</td> 
+       <td><p><b>w3-xxlarge</b></p> <p>Draws a list with very extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">11</td> 
+       <td><p><b>w3-xxxlarge</b></p> <p>Draws a list with very high extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">12</td> 
+       <td><p><b>w3-jumbo</b></p> <p>Draws a list with jumbo large font.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_lists.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Lists&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;List Demo&lt;/h2&gt;
+      &lt;hr/&gt;
+      &lt;h3&gt;Simple List&lt;/h3&gt;
+      &lt;ul class = "w3-ul"&gt;
+         &lt;li&gt;Mahesh Parashar&lt;/li&gt;
+         &lt;li&gt;Rahul Sharma&lt;/li&gt;
+         &lt;li&gt;Mohan Sood&lt;/li&gt;
+      &lt;/ul&gt;
+      
+      &lt;h3&gt;Stripped List with borders&lt;/h3&gt;
+      &lt;ul class = "w3-ul w3-striped w3-bordered w3-border"&gt;
+         &lt;li&gt;Mahesh Parashar&lt;/li&gt;
+         &lt;li&gt;Rahul Sharma&lt;/li&gt;
+         &lt;li&gt;Mohan Sood&lt;/li&gt;
+      &lt;/ul&gt;
+      
+      &lt;h3&gt;List as Card&lt;/h3&gt;
+      &lt;ul class = "w3-ul w3-card-4"&gt;
+         &lt;li&gt;Mahesh Parashar&lt;/li&gt;
+         &lt;li&gt;Rahul Sharma&lt;/li&gt;
+         &lt;li&gt;Mohan Sood&lt;/li&gt;
+      &lt;/ul&gt;
+      
+      &lt;h3&gt;List with very small font&lt;/h3&gt;
+      &lt;ul class = "w3-ul w3-tiny"&gt;
+         &lt;li&gt;Mahesh Parashar&lt;/li&gt;
+         &lt;li&gt;Rahul Sharma&lt;/li&gt;
+         &lt;li&gt;Mohan Sood&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Images</h1> 
+    <p>W3.CSS provides options to display images in beautiful and interesting ways using w3-image as the main class.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-image</b></p> <p>Represents a basic styled image without any border.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-circle</b></p> <p>Displays an image within a circle</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-title</b></p> <p>Used to put text over an image.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>w3-card</b></p> <p>Draws an image as a card.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_images.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Images&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel="stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Images Demo&lt;/h2&gt;
+      &lt;hr/&gt;
+      &lt;h3&gt;Simple Image&lt;/h3&gt;
+      &lt;div class = "w3-image"&gt;
+         &lt;img src = "html5-mini-logo.jpg" alt = "html5"&gt;
+      &lt;/div&gt;
+      
+      &lt;h3&gt;Circled Image&lt;/h3&gt;
+      &lt;div class = "w3-image"&gt;
+         &lt;img src = "html5-mini-logo.jpg" alt = "html5" class = "w3-circle"&gt;
+      &lt;/div&gt;
+      
+      &lt;h3&gt;Text over image&lt;/h3&gt;
+      &lt;div class = "w3-image"&gt;&lt;img src = "html5-mini-logo.jpg" alt = "html5"&gt;
+         &lt;div class = "w3-title w3-text-black"&gt;Learn HTML5&lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;h3&gt;Image as a card&lt;/h3&gt;
+      &lt;div class = "w3-image"&gt;
+         &lt;img src = "html5-mini-logo.jpg" alt = "html5" class = "w3-card-4"&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Icons</h1> 
+    <p>W3.CSS supports the following popular icon libraries −</p> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p>Font Awesome Icons</p></li> 
+     <li><p>Google Material Icons</p></li> 
+     <li><p>Bootstrap Icons</p></li> 
+    </ul> 
+    <h2>Usage</h2> 
+    <p>To use an icon, put the name of the icon in the class of an HTML &lt;i&gt; element. To control the size of an icon, you can use the following classes −</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-tiny</b></p> <p>Draws an icon of very small size.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-small</b></p> <p>Draws an icon of small size.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-large</b></p> <p>Draws an icon of large size.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>w3-xlarge</b></p> <p>Draws an icon of extra large size.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>w3-xxlarge</b></p> <p>Draws an icon of very extra large size.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">6</td> 
+       <td><p><b>w3-xxxlarge</b></p> <p>Draws an icon of very high extra large size.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_icons.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Icons&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt; 
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+      &lt;link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"&gt;
+      &lt;link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons"&gt;
+      &lt;link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Icons Demo&lt;/h2&gt;
+      &lt;hr/&gt;
+      &lt;h3&gt;Font Awesome Icon Demo&lt;/h3&gt;
+      &lt;i class = "fa fa-cloud"&gt;&lt;/i&gt;
+      &lt;i class = "fa fa-cloud w3-large"&gt;&lt;/i&gt;
+      &lt;i class = "fa fa-cloud w3-xlarge"&gt;&lt;/i&gt;
+      &lt;i class = "fa fa-cloud w3-xxlarge"&gt;&lt;/i&gt;
+      &lt;i class = "fa fa-cloud w3-xxxlarge"&gt;&lt;/i&gt;
+      &lt;i class = "fa fa-cloud w3-text-teal" style = "font-size:64px"&gt;&lt;/i&gt;
+      
+      &lt;h3&gt;Google Material Design Icon Demo&lt;/h3&gt;
+      &lt;i class = "material-icons w3-large"&gt;cloud&lt;/i&gt;
+      &lt;i class = "material-icons"&gt;cloud&lt;/i&gt;
+      &lt;i class = "material-icons w3-xlarge"&gt;cloud&lt;/i&gt;
+      &lt;i class = "material-icons w3-xxlarge"&gt;cloud&lt;/i&gt;
+      &lt;i class = "material-icons w3-xxxlarge"&gt;cloud&lt;/i&gt;
+      &lt;i class = "material-icons w3-text-teal" style = "font-size:64px"&gt;cloud&lt;/i&gt;
+      
+      &lt;h3&gt;Bootstrap Icon Demo&lt;/h3&gt;
+      &lt;i class = "glyphicon glyphicon-cloud"&gt;&lt;/i&gt;
+      &lt;i class = "gclass = "glyphicon glyphicon-cloud w3-large"&gt;&lt;/i&gt;
+      &lt;i class = "glyphicon glyphicon-cloud w3-xlarge"&gt;&lt;/i&gt;
+      &lt;i class = "glyphicon glyphicon-cloud w3-xxlarge"&gt;&lt;/i&gt;
+      &lt;i class = "glyphicon glyphicon-cloud w3-xxxlarge"&gt;&lt;/i&gt;
+      &lt;i class = "glyphicon glyphicon-cloud w3-text-teal" style = "font-size:64px"&gt;&lt;/i&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Colors</h1> 
+    <p>W3.CSS supports a rich set of color classes. These color classes are inspired and developed considering the colors used in marketing, road signs, and sticky notes.</p> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p>w3-red</p></li> 
+     <li><p>w3-pink</p></li> 
+     <li><p>w3-purple</p></li> 
+     <li><p>w3-deep-purple</p></li> 
+     <li><p>w3-indigo</p></li> 
+     <li><p>w3-blue</p></li> 
+     <li><p>w3-light-blue</p></li> 
+     <li><p>w3-cyan</p></li> 
+     <li><p>w3-teal</p></li> 
+     <li><p>w3-green</p></li> 
+     <li><p>w3-light-green</p></li> 
+     <li><p>w3-lime</p></li> 
+     <li><p>w3-khaki</p></li> 
+     <li><p>w3-yellow</p></li> 
+     <li><p>w3-amber</p></li> 
+     <li><p>w3-orange</p></li> 
+     <li><p>w3-deep-orange</p></li> 
+     <li><p>w3-blue-grey</p></li> 
+     <li><p>w3-brown</p></li> 
+     <li><p>w3-light-grey</p></li> 
+     <li><p>w3-grey</p></li> 
+     <li><p>w3-dark-grey</p></li> 
+     <li><p>w3-black</p></li> 
+    </ul> 
+    <h2>Color Themes</h2> 
+    <p>W3.CSS provides excellent support for applying a theme to a website using its public domain theme css. Some of the examples are given below −</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">CSS Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-theme-indigo.css</b></p> <p>CSS having Indigo variant colors</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-theme-red.css</b></p> <p>CSS having Red variant colors</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <p>In order to use themes, go to the <a rel="nofollow" target="_blank">https://www.w3schools.com/w3css/w3css_downloads.asp</a> to download the required CSS file.</p> 
+    <h2>Example</h2> 
+    <h3>w3css_colors.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Color Themes&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width = device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+      &lt;link rel = "stylesheet" href = "css/w3-theme-red.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Color Theme Demo&lt;/h2&gt;
+      &lt;hr/&gt;
+      &lt;div class = "w3-card-4"&gt;
+         &lt;div class = "w3-container w3-theme w3-card-2"&gt;
+            &lt;h1&gt;Red Colored Theme&lt;/h1&gt;
+         &lt;/div&gt;
+         
+         &lt;div class = "w3-container w3-text-theme"&gt;
+            &lt;h2&gt;w3-text-theme - Theme for Text&lt;/h2&gt;
+         &lt;/div&gt;
+         
+         &lt;ul class = "w3-ul w3-border-top"&gt;
+            &lt;li class = "w3-theme-l5" style = "position:relative"&gt;
+            &lt;a class = "w3-btn-floating-large w3-theme-action w3-right"
+            style = "position:absolute;top:-28px;right:16px;"&gt;+&lt;/a&gt;
+            &lt;p&gt;Using w3-theme-l5 / w3-theme-light style&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class = "w3-theme-l4"&gt;&lt;p&gt;Using w3-theme-l4 style&lt;/p&gt;&lt;/li&gt;
+            &lt;li class = "w3-theme-l3"&gt;&lt;p&gt;Using w3-theme-l3 style&lt;/p&gt;&lt;/li&gt;
+            &lt;li class = "w3-theme-l2"&gt;&lt;p&gt;Using w3-theme-l2 style&lt;/p&gt;&lt;/li&gt;
+            &lt;li class = "w3-theme-l1"&gt;&lt;p&gt;Using w3-theme-l1 style&lt;/p&gt;&lt;/li&gt;
+            &lt;li class = "w3-theme"&gt;&lt;p&gt;Using w3-theme style&lt;/p&gt;&lt;/li&gt;
+            &lt;li class = "w3-theme-d1"&gt;&lt;p&gt;Using w3-theme style&lt;/p&gt;&lt;/li&gt;
+            &lt;li class = "w3-theme-d2"&gt;&lt;p&gt;Using w3-theme style&lt;/p&gt;&lt;/li&gt;
+            &lt;li class = "w3-theme-d3"&gt;&lt;p&gt;Using w3-theme style&lt;/p&gt;&lt;/li&gt;
+            &lt;li class = "w3-theme-d4"&gt;&lt;p&gt;Using w3-theme style&lt;/p&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Navigation</h1> 
+    <p>W3.CSS has several special classes to display a navigation bar or a menu on a website quickly.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-topnav</b></p> <p>Styles a list as a horizontal menu/navigation bar.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-sidenav</b></p> <p>Styles a list as a vertical menu/navigation bar.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_navigation.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Navigation&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width=device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+      &lt;link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"&gt;
+      &lt;link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Navigation Demo&lt;/h2&gt;
+      &lt;hr/&gt;
+      &lt;h3&gt;Horizontal top navigation bar&lt;/h3&gt;
+      &lt;nav class = "w3-topnav w3-red"&gt;
+         &lt;a href="#"&gt;Home&lt;/a&gt;
+         &lt;a href="#"&gt;Overview&lt;/a&gt;
+         &lt;a href="#"&gt;Environment&lt;/a&gt;
+         &lt;a href="#"&gt;Containers&lt;/a&gt;
+         &lt;a href="#"&gt;Grids&lt;/a&gt;
+      &lt;/nav&gt;
+      
+      &lt;h3&gt;Using font awesome icons&lt;/h3&gt;
+      &lt;nav class = "w3-topnav w3-red"&gt;
+         &lt;a href="#"&gt;&lt;i class="fa fa-home"&gt;&lt;/i&gt;&lt;/a&gt;
+         &lt;a href="#"&gt;Overview&lt;/a&gt;
+         &lt;a href="#"&gt;Environment&lt;/a&gt;
+         &lt;a href="#"&gt;Containers&lt;/a&gt;
+         &lt;a href="#"&gt;Grids&lt;/a&gt;
+      &lt;/nav&gt;
+      
+      &lt;h3&gt;Using material icons&lt;/h3&gt;
+      &lt;nav class = "w3-topnav w3-red"&gt;
+         &lt;a href="#"&gt;&lt;i class="material-icons"&gt;home&lt;/i&gt;&lt;/a&gt;
+         &lt;a href="#"&gt;Overview&lt;/a&gt;
+         &lt;a href="#"&gt;Environment&lt;/a&gt;
+         &lt;a href="#"&gt;Containers&lt;/a&gt;
+         &lt;a href="#"&gt;Grids&lt;/a&gt;
+      &lt;/nav&gt;
+      
+      &lt;h3&gt;Using Side Navigation&lt;/h3&gt;
+      &lt;nav class = "w3-sidenav w3-red w3-card-2" style="width:25%"&gt;
+         &lt;a href="#"&gt;Home&lt;/a&gt;
+         &lt;a href="#"&gt;Overview&lt;/a&gt;
+         &lt;a href="#"&gt;Environment&lt;/a&gt;
+         &lt;a href="#"&gt;Containers&lt;/a&gt;
+         &lt;a href="#"&gt;Grids&lt;/a&gt;
+      &lt;/nav&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <h1>W3.CSS - Utilities</h1> 
+    <p>W3.CSS has several utility classes which are very useful for day-to-day designing needs.</p> 
+    <ul class="list" style="-webkit-padding-start:5px"> 
+     <li><p><b>Color utility classes</b> − Examples: w3-red, w3-yellow</p></li> 
+     <li><p><b>Padding utility classes</b> − Examples: w3-padding-jumbo, w3-padding-16</p></li> 
+     <li><p><b>Margin utility classes</b> − Examples: w3-margin-8, w3-margin-64</p></li> 
+     <li><p><b>Border utility class</b> − Examples: w3-border-left, w3-border-right</p></li> 
+     <li><p><b>Size utility classes</b> − Examples: w3-tiny, w3-small</p></li> 
+     <li><p><b>Circle utility class</b> − Example: w3-circle</p></li> 
+     <li><p><b>Center utility class</b> − Example: w3-center</p></li> 
+    </ul> 
+    <h2>Example</h2> 
+    <h3>w3css_utilities.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Utilities&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width=device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;W3.CSS Utilities&lt;/h2&gt;
+      &lt;hr/&gt;
+      &lt;h3&gt;Color Utilities Demo&lt;/h3&gt;
+      &lt;div class = "w3-container w3-red"&gt;
+         &lt;p&gt;The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5 functionality.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class = "w3-container w3-green"&gt;
+         &lt;p&gt;The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all have excellent support for HTML5.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;h3&gt;Padding Utilities Demo&lt;/h3&gt;
+      &lt;div class = "w3-container w3-red w3-padding-jumbo"&gt;
+         &lt;p&gt;The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5 functionality.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class = "w3-container w3-green w3-padding-16"&gt;
+         &lt;p&gt;The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all have excellent support for HTML5.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;h3&gt;Margin Utilities Demo&lt;/h3&gt;
+      &lt;div class = "w3-container w3-margin-64"&gt;
+         &lt;p&gt;The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5 functionality.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class = "w3-container w3-margin-8"&gt;
+         &lt;p&gt;The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all have excellent support for HTML5.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;h3&gt;Border Utilities Demo&lt;/h3&gt;
+      &lt;div class = "w3-container w3-red w3-border-left w3-border-right"&gt;
+         &lt;p&gt;The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5 functionality.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class = "w3-container w3-green w3-border"&gt;
+         &lt;p&gt;The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all have excellent support for HTML5.&lt;/p&gt;
+      &lt;/div&gt;
+ 
+      &lt;h3&gt;Size Utilities Demo&lt;/h3&gt;
+      &lt;div class = "w3-container"&gt;
+         &lt;p class = "w3-small"&gt;Using w3-small font.&lt;/p&gt;
+         &lt;p&gt;Using Default (medium).&lt;/p&gt;
+         &lt;p class = "w3-large"&gt;Using w3-large font.&lt;/p&gt;
+         &lt;p class = "w3-xlarge"&gt;Using w3-xlarge font.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;h3&gt;Circle Utility Demo&lt;/h3&gt;
+      &lt;div class = "w3-container"&gt;
+         &lt;img src = "html5-mini-logo.jpg" alt = "html5" class = "w3-circle"&gt;
+      &lt;/div&gt;
+      &lt;h3&gt;Center Utility Demo&lt;/h3&gt;
+      &lt;div class = "w3-container w3-center w3-black w3-card-2"&gt;
+         &lt;img src = "html5-mini-logo.jpg" class = "w3-circle" alt = "html5"&gt;
+      &lt;/div&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <!-- PRINTING ENDS HERE --> 
+   </div> 
+  </div>
+ </body>
+</html>

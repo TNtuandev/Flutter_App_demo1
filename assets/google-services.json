@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1087710565299",
+    "project_id": "css-tutorial-4db51",
+    "storage_bucket": "css-tutorial-4db51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087710565299:android:a1257b9bd15483bd9131c6",
+        "android_client_info": {
+          "package_name": "com.globaltutorial.css"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087710565299-k7u054pnailaiclj58dpo8irp3ra6d79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.globaltutorial.css",
+            "certificate_hash": "e1764973ce0d5218a5e813a8989daf6f645139fd"
+          }
+        },
+        {
+          "client_id": "1087710565299-vuc0kahimeuuptfq6jeuatl6hhul0ikd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFwWMeU8TkyRdGNw2sG_kCLqhkuw3ySco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087710565299-vuc0kahimeuuptfq6jeuatl6hhul0ikd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

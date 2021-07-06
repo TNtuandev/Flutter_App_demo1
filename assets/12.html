@@ -1,0 +1,277 @@
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../theme/css/style-min.css?v=3"> 
+  <style>img{display: inline; height: auto; max-width: 100%;}</style>
+ </head>
+ <body>
+  <div class="content"> 
+   <div class="col-md-7 middle-col"> 
+    <h1>W3.CSS - Tables</h1> 
+    <div class="clearer"></div> 
+    <p>W3.CSS can be used to display different types of tables using various styles over w3-table.</p> 
+    <table class="table table-bordered" style="background-color:white"> 
+     <tbody> 
+      <tr> 
+       <th style="text-align:center;">Sr. No.</th> 
+       <th style="text-align:center;">Class Name &amp; Description</th> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">1</td> 
+       <td><p><b>w3-table</b></p> <p>Represents a basic table without any border.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">2</td> 
+       <td><p><b>w3-striped</b></p> <p>Displays a stripped table.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">3</td> 
+       <td><p><b>w3-bordered</b></p> <p>Draws a table with a border across rows.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">4</td> 
+       <td><p><b>w3-border</b></p> <p>Draws a table with borders.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">5</td> 
+       <td><p><b>w3-card</b></p> <p>Draws a table as a card.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">6</td> 
+       <td><p><b>w3-responsive</b><br> </p><p>Draws a responsive table to show a horizontal scrollbar, if the screen is too small to display the content.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">7</td> 
+       <td><b>w3-tiny</b><p></p> Draws a table with very small font.<p></p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">8</td> 
+       <td><p><b>w3-small</b></p> <p>Draws a table with small font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">9</td> 
+       <td><p><b>w3-large</b></p> <p>Draws a table with large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">10</td> 
+       <td><p><b>w3-xlarge</b></p> <p>Draws a table with extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">11</td> 
+       <td><p><b>w3-xxlarge</b></p> <p>Draws a table with very extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">12</td> 
+       <td><p><b>w3-xxxlarge</b></p> <p>Draws a table with very high extra large font.</p></td> 
+      </tr> 
+      <tr> 
+       <td style="text-align:center;">13</td> 
+       <td><p><b>w3-jumbo</b></p> <p>Draws a table with jumbo large font.</p></td> 
+      </tr> 
+     </tbody> 
+    </table> 
+    <h2>Example</h2> 
+    <h3>w3css_tables.htm</h3> 
+    <a class="demo" rel="nofollow" target="_blank"><i class="fa-external-link"></i> Live Demo</a> 
+    <pre class="prettyprint notranslate" style="white-space:pre-wrap;">
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;The W3.CSS Tables&lt;/title&gt;
+      &lt;meta name = "viewport" content = "width=device-width, initial-scale = 1"&gt;
+      &lt;link rel = "stylesheet" href = "https://www.w3schools.com/lib/w3.css"&gt;
+   &lt;/head&gt;
+   
+   &lt;body class = "w3-container"&gt;
+      &lt;h2&gt;Tables Demo&lt;/h2&gt;
+      &lt;hr/&gt;
+      &lt;h3&gt;Simple Table&lt;/h3&gt;
+      &lt;table class = "w3-table"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th&gt;Student&lt;/th&gt;
+               &lt;th&gt;Class&lt;/th&gt;
+               &lt;th&gt;Grade&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Rahul Sharma&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;B&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mohan Sood&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+      
+      &lt;h3&gt;Stripped Table with borders&lt;/h3&gt;
+      &lt;table class = "w3-table w3-striped w3-bordered w3-border"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th&gt;Student&lt;/th&gt;
+               &lt;th&gt;Class&lt;/th&gt;
+               &lt;th&gt;Grade&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Rahul Sharma&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;B&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mohan Sood&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;hr/&gt;
+      
+      &lt;h3&gt;Table as Card&lt;/h3&gt;
+      &lt;table class = "w3-table w3-card-4"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+            &lt;th&gt;Student&lt;/th&gt;
+            &lt;th&gt;Class&lt;/th&gt;
+            &lt;th&gt;Grade&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Rahul Sharma&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;B&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mohan Sood&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+      
+      &lt;h3&gt;Responsive table&lt;/h3&gt;
+      &lt;div class = "w3-responsive"&gt;
+         &lt;table class = "w3-table w3-card-4"&gt;
+            &lt;thead&gt;
+               &lt;tr&gt;
+                  &lt;th&gt;Student&lt;/th&gt;
+                  &lt;th&gt;Class&lt;/th&gt;
+                  &lt;th&gt;Data #1&lt;/th&gt;
+                  &lt;th&gt;Data #2&lt;/th&gt;
+                  &lt;th&gt;Data #3&lt;/th&gt;
+                  &lt;th&gt;Data #4&lt;/th&gt;
+                  &lt;th&gt;Data #5&lt;/th&gt;
+                  &lt;th&gt;Data #6&lt;/th&gt;
+                  &lt;th&gt;Data #7&lt;/th&gt;
+                  &lt;th&gt;Data #8&lt;/th&gt;
+                  &lt;th&gt;Data #9&lt;/th&gt;
+                  &lt;th&gt;Data #10&lt;/th&gt;
+               &lt;/tr&gt;
+            &lt;/thead&gt;
+            
+            &lt;tbody&gt;
+               &lt;tr&gt;
+                  &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+                  &lt;td&gt;VI&lt;/td&gt;
+                  &lt;td&gt;10&lt;/td&gt;
+                  &lt;td&gt;11&lt;/td&gt;
+                  &lt;td&gt;12&lt;/td&gt;
+                  &lt;td&gt;13&lt;/td&gt;
+                  &lt;td&gt;14&lt;/td&gt;
+                  &lt;td&gt;15&lt;/td&gt;
+                  &lt;td&gt;16&lt;/td&gt;
+                  &lt;td&gt;17&lt;/td&gt;
+                  &lt;td&gt;19&lt;/td&gt;
+                  &lt;td&gt;20&lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td&gt;Rahul Sharma&lt;/td&gt;
+                  &lt;td&gt;VI&lt;/td&gt;
+                  &lt;td&gt;10&lt;/td&gt;
+                  &lt;td&gt;11&lt;/td&gt;
+                  &lt;td&gt;12&lt;/td&gt;
+                  &lt;td&gt;13&lt;/td&gt;
+                  &lt;td&gt;14&lt;/td&gt;
+                  &lt;td&gt;15&lt;/td&gt;
+                  &lt;td&gt;16&lt;/td&gt;
+                  &lt;td&gt;17&lt;/td&gt;
+                  &lt;td&gt;19&lt;/td&gt;
+                  &lt;td&gt;20&lt;/td&gt;
+               &lt;/tr&gt;
+               &lt;tr&gt;
+                  &lt;td&gt;Mohan Sood&lt;/td&gt;
+                  &lt;td&gt;VI&lt;/td&gt;
+                  &lt;td&gt;10&lt;/td&gt;
+                  &lt;td&gt;11&lt;/td&gt;
+                  &lt;td&gt;12&lt;/td&gt;
+                  &lt;td&gt;13&lt;/td&gt;
+                  &lt;td&gt;14&lt;/td&gt;
+                  &lt;td&gt;15&lt;/td&gt;
+                  &lt;td&gt;16&lt;/td&gt;
+                  &lt;td&gt;17&lt;/td&gt;
+                  &lt;td&gt;19&lt;/td&gt;
+                  &lt;td&gt;20&lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;/tbody&gt;
+         &lt;/table&gt;
+      &lt;/div&gt;
+      
+      &lt;h3&gt;Table with very small font&lt;/h3&gt;
+      &lt;table class = "w3-table w3-tiny"&gt;
+         &lt;thead&gt;
+            &lt;tr&gt;
+               &lt;th&gt;Student&lt;/th&gt;
+               &lt;th&gt;Class&lt;/th&gt;
+               &lt;th&gt;Grade&lt;/th&gt;
+            &lt;/tr&gt;
+         &lt;/thead&gt;
+         &lt;tbody&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mahesh Parashar&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Rahul Sharma&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;B&lt;/td&gt;
+               &lt;/tr&gt;
+            &lt;tr&gt;
+               &lt;td&gt;Mohan Sood&lt;/td&gt;
+               &lt;td&gt;VI&lt;/td&gt;
+               &lt;td&gt;A&lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/tbody&gt;
+      &lt;/table&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</pre> 
+    <h2>Result</h2> 
+    <p>Verify the result.</p> 
+    <!-- PRINTING ENDS HERE --> 
+   </div> 
+  </div>
+ </body>
+</html>
