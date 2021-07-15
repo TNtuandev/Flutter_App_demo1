@@ -4,6 +4,7 @@ import 'package:test3/PageScreen.dart';
 
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 

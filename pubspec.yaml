@@ -38,7 +38,11 @@ dependencies:
   flutter_html: ^2.0.0
   zoom_widget: ^0.2.1
   flutter_webview_plugin: ^0.4.0
-
+  webview_flutter_plus: ^0.2.2
+  zoom_pinch_overlay: ^1.1.2
+  zoomable_tilt_view: ^0.1.1
+  diagonal_scrollview: ^0.2.0+1
+  fluttertoast: ^8.0.7
 
 dev_dependencies:
   flutter_test:

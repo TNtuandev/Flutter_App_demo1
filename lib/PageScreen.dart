@@ -88,7 +88,7 @@ class _PageScreenState extends State<PageScreen> {
                                   }
                                 });
                               },
-                              child: Icon(Icons.star,
+                              child: Icon(Icons.star, size: 25,
                                   color: listData[index].selected == true
                                       ? Colors.red
                                       : Colors.grey))
